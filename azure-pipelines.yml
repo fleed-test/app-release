@@ -20,7 +20,7 @@ steps:
 - task: GitHubRelease@1
   inputs:
     gitHubConnection: 'github_fleed'
-    repositoryName: '$(Build.Repository.Name)'
+    repositoryName: 'fleed-test/app-release'
     action: 'create'
     target: '$(Build.SourceVersion)'
     tagSource: 'gitTag'
